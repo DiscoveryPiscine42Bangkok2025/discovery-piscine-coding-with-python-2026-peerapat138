@@ -50,7 +50,7 @@ def checkmate(board):
                     positions["k"] = (i,j)
     if have["p"] > 0:
         """pawn"""
-        if abs(positions["p"][1] - positions["k"][1]) == 1 and abs(positions["p"][0] - positions["k"][0]) == 1:
+        if abs(positions["p"][1] - positions["k"][1]) == 1 and positions["p"][0] - positions["k"][0] == 1:
             """หา p จาก เอาตำแหน่ง col_p +- cal_k ต้องได้ 1 และ row_p +- row_k ก็ต้องได้ 1 เพราะ ตำแหน่งชนะมันอยู่ ซ้ายบน ขวาบน"""
             sus += 1
     else:
